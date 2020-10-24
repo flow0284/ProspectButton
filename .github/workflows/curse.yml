@@ -4,7 +4,7 @@ name: Curse Build
 on:
   push:
     branches:
-    - master
+    - main
 
     paths-ignore:
     - ".github/workflows/curse.yml"
@@ -20,11 +20,11 @@ jobs:
         path: 'ProspectButton'
     - run: ./ProspectButton/.github/workflows/get-translations.sh deDE
     #- run: ./ProspectButton/.github/workflows/get-translations.sh enUS
-    - run: ./ProspectButton/.github/workflows/get-translations.sh esES
-    - run: ./ProspectButton/.github/workflows/get-translations.sh frFR
-    - run: ./ProspectButton/.github/workflows/get-translations.sh itIT
-    - run: ./ProspectButton/.github/workflows/get-translations.sh ptBR
-    - run: ./ProspectButton/.github/workflows/get-translations.sh ruRU
+    #- run: ./ProspectButton/.github/workflows/get-translations.sh esES
+    #- run: ./ProspectButton/.github/workflows/get-translations.sh frFR
+    #- run: ./ProspectButton/.github/workflows/get-translations.sh itIT
+    #- run: ./ProspectButton/.github/workflows/get-translations.sh ptBR
+    #- run: ./ProspectButton/.github/workflows/get-translations.sh ruRU
     - name: Delete files for curse
       run: rm -rf ProspectButton/README.md ProspectButton/.github/ ProspectButton/.gitignore ProspectButton/.git
     - name: Generate build number
