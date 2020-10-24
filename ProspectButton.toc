@@ -1,7 +1,7 @@
 ## Interface: 90001
 ## Title: ProspectButton
 ## Author: flow0284
-## Version: 9.0.0
+## Version: AUTOMATIC_VERSION
 ## Description: Addon for easy prospecting ore
 ## Notes: Addon for easy prospecting ore
 ## Authors: flow0284
