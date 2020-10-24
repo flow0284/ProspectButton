@@ -1,0 +1,40 @@
+## Interface: 90001
+## Title: ProspectButton
+## Author: flow0284
+## Version: 9.0.0
+## Description: Addon for easy prospecting ore
+## Notes: Addon for easy prospecting ore
+## Authors: flow0284
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+## OptionalDeps: Ace3
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariablesPerCharacter: ProspectButtonDB, ProspectButtonSettings, ProspectButtonMinimap
+
+# Library files
+#@no-lib-strip@
+lib\LibStub\LibStub.lua
+lib\AceLocale-3.0\AceLocale-3.0.xml
+lib\LibDBIcon-1.0\embeds.xml
+lib\AceAddon-3.0\AceAddon-3.0.xml
+lib\AceConsole-3.0\AceConsole-3.0.xml
+lib\AceDB-3.0\AceDB-3.0.xml
+#@end-no-lib-strip@
+
+# Locale files
+locales\enUS.lua
+locales\deDE.lua
+# locales\esES.lua
+# locales\frFR.lua
+# locales\itIT.lua
+# locales\ptBR.lua
+# locales\ruRU.lua
+
+# Core files
+Options.lua
+ore_db.lua
+ProspectButton.lua
+minimap.lua
+utf8.lua
+utf8data.lua
