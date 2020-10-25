@@ -51,3 +51,4 @@ L["171830"] = "Oxxein Ore"
 L["171831"] = "Phaedrum Ore"
 L["171832"] = "Sinvyr Ore"
 L["171833"] = "Elethium Ore"
+
