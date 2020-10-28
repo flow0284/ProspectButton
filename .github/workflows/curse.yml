@@ -18,17 +18,17 @@ jobs:
     - uses: actions/checkout@v2
       with:
         path: 'ProspectButton'
-    - run: ./ProspectButton/.github/workflows/get-translations.sh deDE
+    - run: ./ProspectButton/.github/workflows/get-translations.sh deDE "{{secrets.CURSE_API_KEY}}"
     #- run: ./ProspectButton/.github/workflows/get-translations.sh enUS
-    - run: ./ProspectButton/.github/workflows/get-translations.sh esES
-    - run: ./ProspectButton/.github/workflows/get-translations.sh esMX
-    - run: ./ProspectButton/.github/workflows/get-translations.sh frFR
-    - run: ./ProspectButton/.github/workflows/get-translations.sh itIT
-    - run: ./ProspectButton/.github/workflows/get-translations.sh koKR
-    - run: ./ProspectButton/.github/workflows/get-translations.sh ptBR
-    - run: ./ProspectButton/.github/workflows/get-translations.sh ruRU
-    - run: ./ProspectButton/.github/workflows/get-translations.sh zhCN
-    - run: ./ProspectButton/.github/workflows/get-translations.sh zhTW
+    - run: ./ProspectButton/.github/workflows/get-translations.sh esES "{{secrets.CURSE_API_KEY}}"
+    - run: ./ProspectButton/.github/workflows/get-translations.sh esMX "{{secrets.CURSE_API_KEY}}"
+    - run: ./ProspectButton/.github/workflows/get-translations.sh frFR "{{secrets.CURSE_API_KEY}}"
+    - run: ./ProspectButton/.github/workflows/get-translations.sh itIT "{{secrets.CURSE_API_KEY}}"
+    - run: ./ProspectButton/.github/workflows/get-translations.sh koKR "{{secrets.CURSE_API_KEY}}"
+    - run: ./ProspectButton/.github/workflows/get-translations.sh ptBR "{{secrets.CURSE_API_KEY}}"
+    - run: ./ProspectButton/.github/workflows/get-translations.sh ruRU "{{secrets.CURSE_API_KEY}}"
+    - run: ./ProspectButton/.github/workflows/get-translations.sh zhCN "{{secrets.CURSE_API_KEY}}"
+    - run: ./ProspectButton/.github/workflows/get-translations.sh zhTW "{{secrets.CURSE_API_KEY}}"
     - name: Delete files for curse
       run: rm -rf ProspectButton/README.md ProspectButton/.github/ ProspectButton/.gitignore ProspectButton/.git
     - name: Generate build number
